@@ -91,7 +91,7 @@ then
     echo "${red}"
     echo "# Coding standard issue(s):"
     echo "---------------------------${reset}"
-    phpcs --standard=Drupal $php_files_changed
+    phpcs --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml $php_files_changed
     coding_standard_error=1
   fi
 fi
