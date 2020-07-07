@@ -1,6 +1,6 @@
 -   id: drupal-phpcs
     name: Drupal code style
     description: Check drupal code style
-    entry: drupal-coder1
+    entry: pre_commit_hooks/drupal-coder
     language: script
     always_run: true

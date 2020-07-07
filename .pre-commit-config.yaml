@@ -9,4 +9,4 @@ repos:
 -   repo: https://github.com/scubafly/pre-commit
     rev: 1.0
     hooks:
-    -   id: drupal-coder2
+    -   id: drupal-coder
