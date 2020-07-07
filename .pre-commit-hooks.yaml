@@ -1,6 +1,6 @@
 -   id: drupal-phpcs
     name: Drupal code style
     description: Check drupal code style
-    entry: drupal-coder
+    entry: drupal-coder1
     language: script
     always_run: true
