@@ -85,7 +85,7 @@ fi
 php_files_changed=`git diff-index --diff-filter=ACMRT --cached --name-only HEAD -- | egrep -v $exclude_dir_and_ext | egrep '\.php$|\.module$|\.inc$|\.install$|\.test$|\.profile$|\.theme$|\.js$|\.css$|\.info$|\.txt$'`
 if [ -n "$php_files_changed" ]
 then
-  phpcs_result=`phpcs --standard=Drupal --report=csv $php_files_changed`
+  phpcs_result=`phpcs --standard=Drupal --extensions=php,module,inc,install,test,profile,theme,css,info,txt,md,yml --report=csv $php_files_changed`
   if [ "$phpcs_result" != "File,Line,Column,Type,Message,Source,Severity,Fixable" ]
   then
     echo "${red}"
