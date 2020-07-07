@@ -1,0 +1,6 @@
+-   id: drupal-phpcs
+    name: Drupal code style
+    description: Check drupal code style
+    entry: drupal-coder
+    language: python
+    always_run: true
