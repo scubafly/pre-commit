@@ -2,5 +2,5 @@
     name: Drupal code style
     description: Check drupal code style
     entry: drupal-coder
-    language: python
+    language: bash
     always_run: true
